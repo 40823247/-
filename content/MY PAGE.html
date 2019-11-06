@@ -1,6 +1,6 @@
 <!DOCTYPE html><html>
         <head>
-        <title>CMSiMDE</title>
+        <title>2019 Fall 40823247計算機程式課程網頁</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
@@ -151,6 +151,31 @@ init_mathjax();
         </header>
     <div id="tipue_search_content"> <a href='HELLO WORLD.html'>Next</a> >> HELLO WORLD<br /><h1>MY PAGE</h1>
 <p><img alt="" height="378" src="./../images/LVwWpt1.gif" width="278"/></p>
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823251&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=40823251&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=mdecourse&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+</script>
+<!-- 取 Dart 程式的按鈕 -->
+<p><button onclick="largest()">放大</button> <button onclick="original()">回復</button> <button onclick="getDart('hello')">Hello</button> <button onclick="getDart('for')">For Loop</button> <button onclick="getDart('sum')">Sum</button><button onclick="getDart('runge_kutta')">Runge-Kutta</button></p>
+<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=mdecourse&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;theme=dark" width="800"></iframe></p>
 <p><a href="http://mde.tw/cp2019">http://mde.tw/cp2019</a></p>
 <p><a href="https://dartpad.dev?id=6d3a0bb74e8830011cbf745cebc30c5e">https://dartpad.dev?id=6d3a0bb74e8830011cbf745cebc30c5e </a></p>
 <p></p>
