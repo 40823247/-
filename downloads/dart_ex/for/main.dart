@@ -1,11 +1,7 @@
-int i;
-int sum;
-
-main(){
-  sum = 0;
-  for(i=1;i <= 10 ;i++){
-    sum += i;
-    print("$sum");
+void main(){
+  for(int i=0;i<10;i++)
+  {
+    print('hi ${i+i}');
   }
-  print('sum = $sum');
+  print('hi hi hi');
 }
